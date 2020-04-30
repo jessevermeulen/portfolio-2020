@@ -57,19 +57,17 @@ const Link = styled(Paragraph)`
 `
 
 const UnderConstrunction = () => (
-  <>
-    <Main>
-      <Title>
-        <span>Under </span>
-        construction
-      </Title>
+  <Main>
+    <Title>
+      <span>Under </span>
+      construction
+    </Title>
 
-      <Paragraph>
-        <span>Jesse Vermeulen — </span>
-        <Link as="a" href="mailto:hello@jessevermeulen.com">hello@jessevermeulen.com</Link>
-      </Paragraph>
-    </Main>
-  </>
+    <Paragraph>
+      <span>Jesse Vermeulen — </span>
+      <Link as="a" href="mailto:hello@jessevermeulen.com">hello@jessevermeulen.com</Link>
+    </Paragraph>
+  </Main>
 )
 
 export default UnderConstrunction
