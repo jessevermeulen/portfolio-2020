@@ -1,14 +1,12 @@
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import UnderConstruction from "../components/UnderConstruction"
-import GlobalStyle from "../style/GlobalStyle"
+import GlobalStyle from "../styles/GlobalStyle"
 
-const Home = () => (
+export default () => (
   <>
     <SEO title="Under construction" />
     <GlobalStyle />
     <UnderConstruction />
   </>
 )
-
-export default Home

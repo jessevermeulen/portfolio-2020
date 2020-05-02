@@ -1,7 +1,6 @@
-import React from "react"
 import styled from "styled-components"
 
-const Main = styled.main`
+export const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +8,11 @@ const Main = styled.main`
   background: #000;
 `
 
-const Title = styled.h1`
+export const Title = styled.h1`
   margin-bottom: var(--variable-font-margin);
   font-size: var(--variable-font-size);
   line-height: 80%;
+  white-space: pre-line;
   background-image: linear-gradient(to right, #88d3ce 0%, #6e45e2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -36,7 +36,7 @@ const Title = styled.h1`
   }
 `
 
-const Paragraph = styled.p`
+export const Paragraph = styled.p`
   font-weight: 400;
   color: #444;
 
@@ -47,7 +47,7 @@ const Paragraph = styled.p`
   }
 `
 
-const Link = styled(Paragraph)`
+export const Link = styled(Paragraph)`
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 
@@ -55,19 +55,3 @@ const Link = styled(Paragraph)`
     color: #fff;
   }
 `
-
-const UnderConstrunction = () => (
-  <Main>
-    <Title>
-      <span>Under </span>
-      construction
-    </Title>
-
-    <Paragraph>
-      <span>Jesse Vermeulen — </span>
-      <Link as="a" href="mailto:hello@jessevermeulen.com">hello@jessevermeulen.com</Link>
-    </Paragraph>
-  </Main>
-)
-
-export default UnderConstrunction

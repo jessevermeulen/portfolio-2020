@@ -8,12 +8,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
+        path: `./content/`,
+      }
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
